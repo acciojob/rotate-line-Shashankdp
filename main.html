@@ -10,18 +10,24 @@
 			width:200px;
 			height:2px;
 			background-color:black;
-			animation-name: firstAnimation;
-            animation-duration: 4s;
+			animation: rotate 1s linear infinite;
+		}
+		.container{
+			width:500px;
+			height:500px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
 		}
 
-		@keyframes firstAnimation {
+		@keyframes rotate{
 
 	    from{
-            transform:rotate(0 deg)
+            transform:rotate(0deg)
 	    }
 
 	    to{
-	       transform:rotate(360 deg)
+	       transform:rotate(360deg)
 	    }
     
 }
@@ -30,7 +36,9 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div id="line"></div>
+	<div class="container">
+		<div id="line"></div>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
